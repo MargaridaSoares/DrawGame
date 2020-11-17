@@ -91,7 +91,7 @@ class DrawActivity  : AppCompatActivity(){
         }
     }
 
-    fun createObject(counter: TextView, newWord: EditText, playView: PlayView, countPlayers: TextView, changeRound: TextView){
+    private fun createObject(counter: TextView, newWord: EditText, playView: PlayView, countPlayers: TextView, changeRound: TextView){
         count = object : CountDownTimer(TIME_GUESSING.toLong(), 1000) {
             //update time
             override fun onTick(millisUntilFinished: Long) {
