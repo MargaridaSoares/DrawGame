@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DrawGame</string>
+    <string name="draw_game">Draw Game</string>
+    <string name="min_1_round"> Min. 1 Round</string>
+    <string name="number_of_players">Number of Players</string>
+    <string name="number_of_rounds">Number of Rounds</string>
+    <string name="min_5_players"> Min. 5 Players</string>
+    <string name="word">Word</string>
+    <string name="start">Start</string>
+    <string name="insert_the_word_to_draw">Insert the word to draw:</string>
+    <string name="pencil">Pencil</string>
+    <string name="_0_0">0/0</string>
+    <string name="_0_0_count">0:0</string>
+    <string name="round">Round</string>
+    <string name="next_round">Next Round</string>
+</resources>

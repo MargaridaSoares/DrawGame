@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F77F00"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/nameGameLandScape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="@string/draw_game"
+        android:textColor="#003049"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <Button
+        android:id="@+id/buttonStartLandscape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="casual"
+        android:text="@string/start"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#D62828"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWordLandscape" />
+
+    <EditText
+        android:id="@+id/editWordLandscape"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/word"
+        android:background="#003049"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/word"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toEndOf="@+id/insertWordLandScape"
+        app:layout_constraintTop_toBottomOf="@+id/EditRoundLandscape" />
+
+    <EditText
+        android:id="@+id/EditPlayersLandScape"
+        android:layout_width="207dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/min_5_players"
+        android:background="#003049"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/min_5_players"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintStart_toEndOf="@+id/numberOfPlayersLandScape"
+        app:layout_constraintTop_toBottomOf="@+id/nameGameLandScape" />
+
+    <TextView
+        android:id="@+id/numberOfPlayersLandScape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:fontFamily="casual"
+        android:hint="@string/number_of_players"
+        android:text="@string/number_of_players"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EditPlayersLandScape"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/EditRoundLandscape"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/min_1_round"
+        android:background="#003049"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="@string/min_1_round"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toEndOf="@+id/textViewLandScape"
+        app:layout_constraintTop_toBottomOf="@+id/EditPlayersLandScape" />
+
+    <TextView
+        android:id="@+id/textViewLandScape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:fontFamily="casual"
+        android:text="@string/number_of_rounds"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/EditRoundLandscape"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/insertWordLandScape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="casual"
+        android:text="@string/insert_the_word_to_draw"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editWordLandscape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLandScape"
+        android:layout_width="44dp"
+        android:layout_height="47dp"
+        android:contentDescription="@string/pencil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toEndOf="@+id/nameGameLandScape"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        app:tint="#003049" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
